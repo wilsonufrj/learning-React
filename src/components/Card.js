@@ -22,7 +22,7 @@ const RenderCard = (pokemon,index)=>{
                 <CardImg top className='' src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index+1}.png`}/>
                     <CardBody className='text-center'>
                         <CardTitle className='font-weight-bold'>#{index+1} {pokemon.data.name}</CardTitle>
-                        <div className='row' style={teste}>
+                        <div className='row'>
                             <Badge className='col-5 offset-1' color="primary ">Grass</Badge>
                             <Badge className='ml-1 col-5' color="success"></Badge>
                         </div>

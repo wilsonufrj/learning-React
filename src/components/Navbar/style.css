@@ -3,14 +3,18 @@
     font-family: pokemon;
 }
 
-div{
-    background: #a42826;
-}
 
-h1{
+#titulo{
     font-family: pokemon;
     color: #ffffff;
+    font-size: 90px;
 }
+
+#header{
+    background: #a42826;
+    
+}
+
 
 /*img{
     width: 150px;

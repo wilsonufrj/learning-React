@@ -1,7 +1,7 @@
 import axios from 'axios'
 import {useReducer,useEffect} from 'react'
 
-const PokeURL = 'https://pokeapi.co/api/v2/pokemon?limit=204'
+const PokeURL = 'https://pokeapi.co/api/v2/pokemon?limit=24'
 
 const monster = async (data) => {
 

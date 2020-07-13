@@ -5,7 +5,7 @@ import './style.css'
 import NavBar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import Pokemon from './pokeController'
-import RenderCard from '../../components/Card'
+import RenderCard from '../../components/Card/Card'
 
 
 

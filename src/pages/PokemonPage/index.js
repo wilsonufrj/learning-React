@@ -10,9 +10,8 @@ import RenderCard from '../../components/Card/Card'
 
 
 const PokemonPage = () => {
-
     const data = Pokemon()
-
+    
     return (
         <div className='d-flex flex-column justify-content-between bg-dark ' >
             <header className='mb-2' >
@@ -24,7 +23,6 @@ const PokemonPage = () => {
                     {
                         data.loading ?<p>Loading ...</p> :
                          data.data.map((res,index)=>RenderCard(res.data,index))
-                         
                     }
                 </div>
             </div>

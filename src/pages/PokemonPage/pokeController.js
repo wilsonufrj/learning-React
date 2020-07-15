@@ -1,7 +1,8 @@
 import axios from 'axios'
 import {useReducer,useEffect} from 'react'
 
-const PokeURL = 'https://pokeapi.co/api/v2/pokemon?limit=24'
+const PokeURL = 'https://pokeapi.co/api/v2/pokemon?limit=150'
+
 
 const monster = async (data) => {
 
@@ -16,7 +17,7 @@ const reducer = (state, action) => {
         case 'LOADING':
             return {
                 ...state,
-                loading: true
+                loading: true,
             }
         case 'SUCCESS':
             return ({
@@ -47,9 +48,8 @@ const Pokemon = () => {
     
     const [data, dispatch] = useReducer(reducer, {
         loading: true,
-        data: {}
+        data: {},
     })
-
     useEffect(() => {
         
         dispatch({ type: 'LOADING' })
@@ -60,12 +60,9 @@ const Pokemon = () => {
                 data: res
             })
         })
-        
-        
     }, [])
-
+    
     return data
-
 }
 
 export default  Pokemon

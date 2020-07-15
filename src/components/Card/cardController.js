@@ -18,7 +18,8 @@ const _color = {
     bug:'#74ff74',
     fire:'#ff2400',
     ghost:'#8b008b',
-    normal:'#808080'
+    normal:'#808080',
+    dark:'#ff69b4'
 }
 
 

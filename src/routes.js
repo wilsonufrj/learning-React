@@ -20,7 +20,7 @@ const Routes =()=>{
             <Route path='/homePage' exact component={HomePage}/>
             <Route path='/newRegister' exact component={NewRegister}/>
             <Route path='/editUser/:id' exact component={EditUser}/>
-            <Route path='/pokemon' exact component={PokemonPage}/>
+            <Route path='/pokemon/' exact component={PokemonPage}/>
             <Route path='/counter' exact component={Counter}/>
 
         </Switch>
